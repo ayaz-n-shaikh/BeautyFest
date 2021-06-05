@@ -1,0 +1,88 @@
+<br /><br /><br />
+<h1>Add Trend</h1>
+
+<div class="col-md-3"></div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">Name</label>
+      <input [(ngModel)]="name" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">list Of Products</label>
+      <input [(ngModel)]="listofproducts" type="text" class="form-control" />
+    </div>
+  </div>
+</div>
+
+<div class="col-md-3"></div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">creater</label>
+      <input [(ngModel)]="creater" type="text" class="form-control" />
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="form-group">
+      <label for="">description</label>
+      <input [(ngModel)]="description" type="text" class="form-control" />
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="form-group">
+    <label for="">Add Image</label>
+    <input
+      (change)="onSelectImage($event)"
+      type="file"
+      class="form-control"
+    />
+  </div>
+</div>
+
+<div class="col-md-3"></div>
+
+<div class="row">
+  <div class="col-md-3">
+    <button (click)="onadd()" class="btn btn-success">Add</button>
+    <a
+      style="margin-left: 10px"
+      routerLink="/login/dashboard/drs"
+      class="btn btn-danger"
+      >Cancel</a
+    >
+  </div>
+</div>
+
+<!-- 
+
+
+<h1>Add Doctor</h1>
+
+<form >
+
+       name
+       <input [(ngModel)]="name" type="text" name="name"> <br> <br>
+       listofproducts
+       <input [(ngModel)]="listofproducts" type="text" name="listofproducts"> <br> <br>
+       Phone No
+       <input [(ngModel)]="creater" type="text" name="creater"> <br> <br>
+       description
+       <input [(ngModel)]="description" type="text" name="description"> <br> <br>
+
+       
+
+
+       <button (click) = "onadd()">Add</button>  <button (click)="back()">Cancel</button>
+
+       
+       
+</form>  
+ -->
