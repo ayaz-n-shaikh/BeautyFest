@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class AddDRService {
     http: HttpClient
-    url = 'https://beauty--fest.herokuapp.com/dashboard/dr'   //express port 4000
+    url = 'https://beauty--fest.herokuapp.com/login/dashboard/dr'   //express port 4000
 
     constructor(httpClient: HttpClient) {
         this.http = httpClient
