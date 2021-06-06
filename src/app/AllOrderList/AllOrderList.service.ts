@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class AllOrderListService {
 
     http: HttpClient
-    url = 'https://beauty--fest.herokuapp.com/dashboard/orders'   //express port 4000
+    url = 'https://beauty--fest.herokuapp.com/MRlogin/dashboard/orders'   //express port 4000
     url1 = 'https://beauty--fest.herokuapp.com/MRlogin/orders'
 
     constructor(httpClient: HttpClient) {
